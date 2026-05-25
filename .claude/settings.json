@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node -e \"const l = require\\('d:/scanv-webpage/node_modules/lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => ['Globe','Code2','Camera','Users','AtSign','MessageCircle','Share2','ExternalLink'].includes\\(k\\)\\).join\\(', '\\)\\)\")",
       "Bash(node -e \"const l = require\\('d:/scanv-webpage/node_modules/lucide-react'\\); const keys = Object.keys\\(l\\); console.log\\(keys.filter\\(k => /github|twitter|instagram|linkedin|x|social/i.test\\(k\\)\\).join\\('\\\\n'\\)\\)\")",
-      "Bash(curl -L \"https://d8j0ntlcm91z4.cloudfront.net/user_3E82YkbXy780AFVlDc74SJ9ct2x/hf_20260525_181530_e7237673-7f6f-4f5b-8ba4-1128be003dfb.png\" -o \"d:\\\\scanv-webpage\\\\public\\\\og-image.png\")"
+      "Bash(curl -L \"https://d8j0ntlcm91z4.cloudfront.net/user_3E82YkbXy780AFVlDc74SJ9ct2x/hf_20260525_181530_e7237673-7f6f-4f5b-8ba4-1128be003dfb.png\" -o \"d:\\\\scanv-webpage\\\\public\\\\og-image.png\")",
+      "Bash(git remote *)"
     ]
   }
 }
