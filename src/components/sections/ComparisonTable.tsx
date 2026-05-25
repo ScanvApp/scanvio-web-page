@@ -106,7 +106,7 @@ export default function ComparisonTable() {
             transition={{ duration: 0.5, delay: 0.16 }}
             className="mt-4 text-gray-400 text-base leading-relaxed"
           >
-            A fair, feature-by-feature look at the top book scouting apps on the market.
+            We checked what the others offer so you don't have to.
           </motion.p>
         </div>
 

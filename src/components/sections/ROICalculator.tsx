@@ -108,7 +108,7 @@ export default function ROICalculator() {
   const weeklyProfit = booksPerWeek * profitPerSale - buyCost * booksPerWeek
   const monthlyProfit = weeklyProfit * 4.33
   const annualProfit = weeklyProfit * 52
-  const daysToPayPro = weeklyProfit > 0 ? (4.99 / (weeklyProfit / 7)).toFixed(1) : '—'
+  const daysToPayPro = weeklyProfit > 0 ? (9.99 / (weeklyProfit / 7)).toFixed(1) : '—'
 
   const fmt$ = useCallback((n: number) =>
     n >= 1000
@@ -266,7 +266,7 @@ export default function ROICalculator() {
                 <span className="text-gray-400 text-sm mb-1.5">days of scanning</span>
               </div>
               <p className="text-xs text-white/35 leading-relaxed">
-                At $4.99/mo, Pro pays for itself almost immediately. Everything after that is pure upside.
+                At $9.99/mo, Pro pays for itself fast. Most sellers cover it in the first run.
               </p>
             </div>
 

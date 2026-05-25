@@ -10,11 +10,11 @@ const FAQS = [
   },
   {
     q: 'Is the Free plan really free forever?',
-    a: 'Yes, genuinely. No credit card required, no trial period, no expiry date. The Free plan includes unlimited barcode scanning, price comparison across 3 stores (Amazon, eBay, and ThriftBooks), and aggregated reviews — forever. Upgrading to Pro ($4.99/month) unlocks 50+ store comparisons, AI recommendations, price drop alerts, and CSV export.',
+    a: 'Yes, genuinely. No credit card required, no trial period, no expiry date. The Free plan includes unlimited barcode scanning, price comparison across 3 stores (Amazon, eBay, and ThriftBooks), and aggregated reviews — forever. Upgrading to Pro ($9.99/month) unlocks 50+ store comparisons, AI recommendations, price drop alerts, and CSV export.',
   },
   {
     q: 'Does Scanvio work without an internet connection?',
-    a: 'Your scan history and saved wishlist items are always available offline. Live price lookups require a connection. An offline database mode for Pro users — delivering sub-1-second results with no signal — is on our roadmap and will roll out after launch.',
+    a: 'Your scan history and saved wishlist items are always available offline. Live price lookups need a connection — that part won\'t work without signal.',
   },
   {
     q: 'How is the ScanvEscore™ calculated?',
@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: 'Which countries and stores are supported?',
-    a: 'Scanvio currently compares prices across 50+ US retailers including Amazon, eBay, ThriftBooks, AbeBooks, Half Price Books, and more. Additional markets are on the roadmap — join the waitlist to get notified as new regions go live.',
+    a: 'Scanvio currently compares prices across 50+ US retailers including Amazon, eBay, ThriftBooks, AbeBooks, Half Price Books, and more. International support is coming — sign up and we\'ll let you know when your region goes live.',
   },
   {
     q: 'What categories does Scanvio support at launch?',
@@ -38,7 +38,7 @@ const FAQS = [
   },
   {
     q: 'When is the app launching on iOS and Android?',
-    a: 'We\'re currently in pre-launch development. Joining the waitlist puts you first in line for early access. Early access members also receive a discount on the Pro plan at launch — the earlier you sign up, the better the deal.',
+    a: 'We\'re in pre-launch right now. Join the waitlist and you\'ll be first in line — early members also lock in a lower Pro rate at launch.',
   },
   {
     q: 'How is Scanvio different from ScoutIQ or Scoutly?',

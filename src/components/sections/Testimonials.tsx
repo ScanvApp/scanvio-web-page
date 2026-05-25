@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const TESTIMONIALS = [
   {
     name: 'Sarah M.',
-    role: 'Book collector, London',
+    role: 'Book collector, Chicago',
     avatar: 'SM',
     color: '#4F8EF7',
     rating: 5,
@@ -13,7 +13,7 @@ const TESTIMONIALS = [
   },
   {
     name: 'James T.',
-    role: 'Student, Manchester',
+    role: 'Student, Austin',
     avatar: 'JT',
     color: '#A855F7',
     rating: 5,
@@ -22,7 +22,7 @@ const TESTIMONIALS = [
   },
   {
     name: 'Priya K.',
-    role: 'Avid reader, Birmingham',
+    role: 'Avid reader, Seattle',
     avatar: 'PK',
     color: '#06B6D4',
     rating: 5,
@@ -31,16 +31,16 @@ const TESTIMONIALS = [
   },
   {
     name: 'Marcus L.',
-    role: 'Secondhand seller, Bristol',
+    role: 'Secondhand seller, Denver',
     avatar: 'ML',
     color: '#10B981',
     rating: 5,
     quote:
-      'Finally an app that doesn\'t make me type titles in manually. Point, scan, done. The aggregated reviews across sources is a genuine game changer.',
+      'Finally an app that doesn\'t make me type titles in manually. Point, scan, done. Having reviews pulled from multiple sources in one place saves me so much time.',
   },
   {
     name: 'Emma R.',
-    role: 'Beta tester, Edinburgh',
+    role: 'Beta tester, Portland',
     avatar: 'ER',
     color: '#F97316',
     rating: 5,
