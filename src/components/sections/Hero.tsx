@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 import Button from '../ui/Button'
 import HeroPhone from '../ui/HeroPhone'
@@ -9,7 +9,7 @@ const fadeUp = {
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] as const },
   }),
 }
 
