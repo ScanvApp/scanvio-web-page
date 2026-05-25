@@ -23,7 +23,7 @@ const PLANS = [
   },
   {
     name: 'Pro',
-    price: '$4.99',
+    price: '$9.99',
     period: 'per month',
     description: 'For power users who scan seriously. AI-powered, unlimited everything.',
     cta: 'Get Early Access',
@@ -174,7 +174,7 @@ export default function Pricing() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-center text-xs text-gray-600 mt-10"
         >
-          Pro pricing is indicative — early access members get a launch discount.
+          Early access members lock in a discounted rate forever. Yearly plan coming at launch — save 33%.
         </motion.p>
       </div>
     </section>

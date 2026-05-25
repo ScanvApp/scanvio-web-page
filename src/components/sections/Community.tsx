@@ -12,7 +12,7 @@ const PERKS = [
   {
     icon: Lock,
     title: 'Locked-In Pro Price',
-    description: 'Early members lock in a lower Pro rate forever. Price goes up at launch.',
+    description: 'Early members lock in a discounted Pro rate forever. Price goes up at launch.',
     color: '#4F8EF7',
   },
   {
