@@ -244,9 +244,7 @@ function LaptopMockup() {
       />
 
       {/* Phone floating bottom-left */}
-      <motion.div
-        animate={{ y: [0, -8, 0] }}
-        transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+      <div
         className="absolute -left-10 -bottom-4 z-10"
         style={{ transform: 'rotate(-8deg)', transformOrigin: 'bottom center' }}
       >
@@ -259,7 +257,7 @@ function LaptopMockup() {
         >
           <PhonePreview />
         </div>
-      </motion.div>
+      </div>
 
       {/* Glow under phone */}
       <div

@@ -28,22 +28,18 @@ export default function StickyCtaBar() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 88, opacity: 0 }}
           transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40 w-full max-w-md px-4 pointer-events-none"
+          className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-2rem)] max-w-md pointer-events-none"
         >
           <div
-            className="pointer-events-auto relative flex items-center justify-between gap-3 px-4 py-3 rounded-2xl border border-white/10 shadow-2xl"
-            style={{
-              background: 'rgba(12,12,18,0.94)',
-              backdropFilter: 'blur(24px)',
-              WebkitBackdropFilter: 'blur(24px)',
-            }}
+            className="pointer-events-auto flex items-center justify-between gap-3 px-4 py-3 rounded-2xl border border-white/15 shadow-2xl"
+            style={{ background: '#0d0e17' }}
           >
             {/* Left */}
             <div className="flex flex-col min-w-0">
               <span className="text-sm font-bold text-white leading-tight">
                 Try Scanvio Free
               </span>
-              <span className="text-[11px] text-gray-500 leading-tight">
+              <span className="text-[11px] text-gray-400 leading-tight mt-0.5">
                 No card · No expiry · iOS &amp; Android
               </span>
             </div>
@@ -51,7 +47,7 @@ export default function StickyCtaBar() {
             {/* Right */}
             <div className="flex items-center gap-2 shrink-0">
               <Button href="#download" variant="primary" size="sm">
-                Get Early Access <ArrowRight size={13} />
+                Get the App <ArrowRight size={13} />
               </Button>
               <button
                 type="button"

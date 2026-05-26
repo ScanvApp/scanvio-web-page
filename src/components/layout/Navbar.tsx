@@ -54,7 +54,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-dark-900/90 backdrop-blur-xl border-b border-white/5 shadow-lg'
+          ? 'bg-dark-900 lg:bg-dark-900/90 lg:backdrop-blur-xl border-b border-white/5 shadow-lg'
           : 'bg-transparent'
       }`}
     >
@@ -114,7 +114,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="lg:hidden bg-dark-800/95 backdrop-blur-xl border-b border-white/5 overflow-hidden"
+            className="lg:hidden bg-dark-800 border-b border-white/5 overflow-hidden"
           >
             <ul className="flex flex-col px-6 py-4 gap-1">
               {NAV_LINKS.map((link, i) => (

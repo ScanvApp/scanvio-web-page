@@ -303,23 +303,15 @@ function FloatingBadge({
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
     >
-      <motion.div
+      <div
         className="flex items-center gap-2 px-3 py-2.5 rounded-xl shadow-xl"
         style={{
-          background: 'rgba(15,20,35,0.85)',
+          background: 'rgba(15,20,35,0.95)',
           border: '1px solid rgba(255,255,255,0.1)',
-          backdropFilter: 'blur(12px)',
-        }}
-        animate={{ y: [0, -6, 0] }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: 'easeInOut',
-          delay: delay + 0.6,
         }}
       >
         {children}
-      </motion.div>
+      </div>
     </motion.div>
   )
 }
