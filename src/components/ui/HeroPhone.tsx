@@ -348,7 +348,7 @@ export default function HeroPhone() {
       {/* ── Floating badges ── */}
 
       {/* Top-left: stores */}
-      <FloatingBadge className="top-0 left-[2%] sm:left-[6%]" delay={0.7}>
+      <FloatingBadge className="hidden sm:block top-0 left-[2%] sm:left-[6%]" delay={0.7}>
         <div
           className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
           style={{ background: 'rgba(79,142,247,0.2)' }}
@@ -362,7 +362,7 @@ export default function HeroPhone() {
       </FloatingBadge>
 
       {/* Right-middle: saving */}
-      <FloatingBadge className="top-[36%] right-[1%] sm:right-[5%]" delay={1.0}>
+      <FloatingBadge className="hidden sm:block top-[36%] right-[1%] sm:right-[5%]" delay={1.0}>
         <div
           className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
           style={{ background: 'rgba(16,185,129,0.2)' }}
@@ -376,7 +376,7 @@ export default function HeroPhone() {
       </FloatingBadge>
 
       {/* Bottom-left: speed */}
-      <FloatingBadge className="bottom-0 left-[2%] sm:left-[6%]" delay={1.25}>
+      <FloatingBadge className="hidden sm:block bottom-0 left-[2%] sm:left-[6%]" delay={1.25}>
         <div
           className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
           style={{ background: 'rgba(245,158,11,0.2)' }}

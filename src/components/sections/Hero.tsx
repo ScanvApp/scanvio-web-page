@@ -70,7 +70,7 @@ function HeroEmailForm() {
 
   return (
     <div className="flex flex-col gap-2 max-w-md">
-      <form onSubmit={handleSubmit} className="flex gap-2">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
         <input
           type="email"
           value={email}
@@ -82,7 +82,7 @@ function HeroEmailForm() {
         <button
           type="submit"
           disabled={loading}
-          className="flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm text-white transition-all duration-200 hover:opacity-90 active:scale-95 disabled:opacity-70 shrink-0"
+          className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm text-white transition-all duration-200 hover:opacity-90 active:scale-95 disabled:opacity-70 shrink-0 w-full sm:w-auto"
           style={{ background: 'linear-gradient(135deg, #4F8EF7 0%, #A855F7 100%)' }}
         >
           {loading
@@ -121,7 +121,7 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full pt-28 pb-16 lg:pt-0 lg:pb-0">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center min-h-screen lg:min-h-0 lg:py-28">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center lg:py-28">
 
           {/* Left — copy */}
           <div className="flex flex-col gap-6 order-2 lg:order-1">

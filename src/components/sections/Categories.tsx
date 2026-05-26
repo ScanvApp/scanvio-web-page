@@ -5,9 +5,9 @@ import { CATEGORIES } from '../../lib/constants'
 
 export default function Categories() {
   return (
-    <section id="categories" className="relative bg-gray-50 py-20 lg:py-28 overflow-hidden">
-      {/* Top fade from dark */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gray-200" />
+    <section id="categories" className="relative bg-dark-900 py-20 lg:py-28 overflow-hidden">
+      {/* Top separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/8 to-transparent" />
 
       {/* Decorative background blob */}
       <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-blue/5 blur-[80px] pointer-events-none" />
@@ -33,10 +33,10 @@ export default function Categories() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, delay: 0.08 }}
-              className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-[1.1] tracking-tight"
+              className="text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] tracking-tight"
             >
               Start with{' '}
-              <span className="text-gray-900">Books.</span>
+              <span className="text-white">Books.</span>
               <br />
               Expand to{' '}
               <span className="gradient-text">Everything.</span>
