@@ -45,9 +45,17 @@ export default function Navbar() {
     return () => observers.forEach((o) => o.disconnect())
   }, [])
 
-  const handleNavClick = (href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!isHome) return // let the browser navigate to /#section on other pages
+    e.preventDefault()
     setActiveLink(href)
     setMobileOpen(false)
+    // wait for the menu close animation (250ms) before scrolling
+    setTimeout(() => {
+      const id = href.replace('#', '')
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }, 260)
   }
 
   return (
@@ -68,7 +76,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={isHome ? link.href : `/${link.href}`}
-                onClick={() => handleNavClick(link.href)}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className={`relative text-sm font-medium transition-colors duration-200 pb-1 ${
                   activeLink === link.href
                     ? 'text-white'
@@ -126,7 +134,7 @@ export default function Navbar() {
                 >
                   <a
                     href={isHome ? link.href : `/${link.href}`}
-                    onClick={() => handleNavClick(link.href)}
+                    onClick={(e) => handleNavClick(e, link.href)}
                     className={`block py-3 text-sm font-medium border-b border-white/5 transition-colors duration-200 ${
                       activeLink === link.href
                         ? 'text-brand-blue'
