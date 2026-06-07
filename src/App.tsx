@@ -14,7 +14,6 @@ const Features         = lazy(() => import('./components/sections/Features'))
 const ComparisonTable  = lazy(() => import('./components/sections/ComparisonTable'))
 const AppShowcase        = lazy(() => import('./components/sections/AppShowcase'))
 const DashboardShowcase  = lazy(() => import('./components/sections/DashboardShowcase'))
-const PlatformShowcase   = lazy(() => import('./components/sections/PlatformShowcase'))
 const HowItWorks       = lazy(() => import('./components/sections/HowItWorks'))
 const Pricing          = lazy(() => import('./components/sections/Pricing'))
 const ROICalculator    = lazy(() => import('./components/sections/ROICalculator'))
@@ -44,7 +43,6 @@ function App() {
           <ComparisonTable />
           <AppShowcase />
           <DashboardShowcase />
-          <PlatformShowcase />
           <HowItWorks />
           <Pricing />
           <ROICalculator />
