@@ -13,6 +13,7 @@ const ROWS: { feature: string; scanvio: CellVal; scoutiq: CellVal; scoutly: Cell
   { feature: 'Reviews & ratings',        scanvio: true,       scoutiq: false,      scoutly: false,       bookzpro: false },
   { feature: 'Profit score',             scanvio: true,       scoutiq: true,       scoutly: true,        bookzpro: true },
   { feature: 'GoSignal / buy triggers',  scanvio: true,       scoutiq: true,       scoutly: true,        bookzpro: true },
+  { feature: 'ASIN restriction alerts', scanvio: 'pro',      scoutiq: true,       scoutly: false,       bookzpro: true },
   { feature: 'Offline mode',             scanvio: true,       scoutiq: true,       scoutly: true,        bookzpro: true },
   { feature: 'Wishlist',                 scanvio: true,       scoutiq: false,      scoutly: false,       bookzpro: false },
   { feature: 'Buy List',                 scanvio: true,       scoutiq: true,       scoutly: true,        bookzpro: true },

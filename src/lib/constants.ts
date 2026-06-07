@@ -29,7 +29,7 @@ export const FEATURE_CARDS: FeatureCard[] = [
   {
     icon: 'grid',
     title: 'Beyond Books',
-    description: 'Starting with books. Every other category is on the way.',
+    description: 'Starting with books. Electronics, fashion, and groceries are next.',
   },
 ]
 

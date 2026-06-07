@@ -6,7 +6,7 @@ import Button from '../ui/Button'
 const FAQS = [
   {
     q: 'Do I need an Amazon seller account to use Scanvio?',
-    a: 'No. Scanvio works for anyone — whether you\'re buying books for personal use, comparing prices before a purchase, or running a book reselling business on Amazon. A seller account is only needed if you want to list and sell on Amazon itself.',
+    a: 'Scanvio is built for Amazon FBA book sellers and serious book resellers. You don\'t need a seller account to start scanning, but the profit score, GoSignal, BSR data, and FBA fee calculator are designed specifically for sourcing inventory to sell on Amazon. If you\'re running a reselling business, connecting your Amazon seller account unlocks the full data set.',
   },
   {
     q: 'Is the Free plan really free forever?',
@@ -31,6 +31,10 @@ const FAQS = [
   {
     q: 'How accurate are the prices shown?',
     a: 'Prices are fetched live from each retailer at the time of your scan, so they reflect current availability and pricing. Amazon prices are pulled directly via the SP-API — not cached, not approximated.',
+  },
+  {
+    q: 'How does Scanvio connect to my Amazon seller account?',
+    a: 'Scanvio uses Login with Amazon (LWA) — Amazon\'s official OAuth flow — to securely connect your seller account. You authorize Scanvio once inside the app and we use that to pull live pricing, BSR, and competition data directly via the Amazon SP-API. We never store your Amazon credentials, and you can revoke access at any time from your Amazon Seller Central settings.',
   },
   {
     q: 'Can I cancel my Pro plan anytime?',

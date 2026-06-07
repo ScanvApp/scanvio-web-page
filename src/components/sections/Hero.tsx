@@ -165,8 +165,8 @@ export default function Hero() {
               custom={0.2}
               className="text-base lg:text-lg text-gray-400 leading-relaxed max-w-md"
             >
-              Scan any barcode or book cover and instantly know if the price is fair,
-              what real readers think, and where to get it cheaper. Starting with books.
+              Scan any barcode or book cover and instantly know if a book is worth buying
+              to resell — profit score, sales rank, and competition in one scan. Starting with books.
             </motion.p>
 
             {/* Email form */}

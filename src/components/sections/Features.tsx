@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import {
   ArrowRight, ScanLine, BarChart2, Star, Clock, Zap, WifiOff,
   TrendingUp, Bell, FileDown, Users, Target, Layers, DollarSign,
-  Filter, CheckCircle, ShoppingCart, BookOpen,
+  Filter, CheckCircle, ShoppingCart, BookOpen, AlertTriangle,
 } from 'lucide-react'
 import type { ComponentType, ElementType } from 'react'
 import Button from '../ui/Button'
@@ -232,10 +232,11 @@ const GRID_FEATURES: GridFeature[] = [
   { icon: WifiOff,      title: 'Works Offline',          body: 'Cached data functions with no signal — critical at sales.',    accent: '#6B7280' },
   { icon: Filter,       title: 'Custom Triggers',        body: 'Fine-tune GoSignal with rank, profit, and eScore floors.',     accent: '#4F8EF7' },
   { icon: BookOpen,     title: 'Live Amazon Pricing',    body: 'Real prices from SP-API — never cached, never stale.',         accent: '#10B981' },
+  { icon: AlertTriangle, title: 'ASIN Restriction Alerts', body: 'Flags IP complaints, brand-gated, and hazmat ASINs before you buy — never get stuck with unsellable stock.', accent: '#EF4444', pro: true },
   { icon: Bell,         title: 'Price Drop Alerts',      body: 'Notified the moment a watched item hits your target price.',   accent: '#F97316', pro: true },
   { icon: Zap,          title: 'AI Recommendations',     body: 'Discover books in your niche that flip consistently.',         accent: '#06B6D4', pro: true },
   { icon: FileDown,     title: 'CSV Export',             body: 'Export your full scan history for spreadsheet analysis.',      accent: '#6B7280', pro: true },
-  { icon: BarChart2,    title: 'Price History',          body: "See how a book's Amazon price has moved over 90 days.",        accent: '#A855F7', pro: true },
+  { icon: BarChart2,    title: 'Price & Rank History',   body: "90-day price and sales rank history — see if demand is climbing or dying before you commit.",  accent: '#A855F7', pro: true },
 ]
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
