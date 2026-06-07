@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const NAV = [
-  { label: 'Dashboard',          src: '/screenshots/dashboard.png'           },
-  { label: 'Scout Books',        src: '/screenshots/scout.png'               },
-  { label: 'My Inventory',       src: '/screenshots/inventory.png'           },
-  { label: 'Buy List',           src: '/screenshots/buylist.png'             },
-  { label: 'Amazon Integration', src: '/screenshots/amazon-integration.png'  },
+  { label: 'Dashboard',          src: '/screenshots/c-dashboard.png'           },
+  { label: 'Scout Books',        src: '/screenshots/c-scout.png'               },
+  { label: 'My Inventory',       src: '/screenshots/c-inventory.png'           },
+  { label: 'Buy List',           src: '/screenshots/c-buylist.png'             },
+  { label: 'Amazon Integration', src: '/screenshots/c-amazon-integration.png'  },
 ]
 
 const PRICES = [
