@@ -98,7 +98,7 @@ export const FEATURES: Feature[] = [
     icon: 'zap',
     title: 'AI Recommendations',
     description:
-      'The more you scan, the smarter it gets. Discover products you\'ll love based on your taste.',
+      'The more you scan, the smarter it gets. Discover books in your niche that flip consistently — based on your real sourcing data.',
     accent: '#06B6D4',
     size: 'wide',
   },

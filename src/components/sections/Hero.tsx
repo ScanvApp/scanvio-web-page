@@ -138,7 +138,7 @@ export default function Hero() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-blue" />
                 </span>
-                Scan. Discover. Decide.
+                Built for Amazon FBA Book Sellers
               </span>
             </motion.div>
 
@@ -150,10 +150,10 @@ export default function Hero() {
               custom={0.1}
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight text-white">
-                Scan Anything.
+                Scout Books.
                 <br />
-                See{' '}
-                <span className="gradient-text">Everything.</span>
+                Source{' '}
+                <span className="gradient-text">Smarter.</span>
               </h1>
             </motion.div>
 
