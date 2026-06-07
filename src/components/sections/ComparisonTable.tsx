@@ -21,7 +21,6 @@ const ROWS: { feature: string; scanvio: CellVal; scoutiq: CellVal; scoutly: Cell
   { feature: 'AI recommendations',       scanvio: 'pro',      scoutiq: false,      scoutly: false,       bookzpro: false },
   { feature: 'Price drop alerts',        scanvio: 'pro',      scoutiq: false,      scoutly: false,       bookzpro: false },
   { feature: 'No credit card to start',  scanvio: true,       scoutiq: false,      scoutly: false,       bookzpro: false },
-  { feature: 'Modern UI / design',       scanvio: true,       scoutiq: 'partial',  scoutly: false,       bookzpro: 'partial' },
 ]
 
 const COLS = [
@@ -206,7 +205,7 @@ export default function ComparisonTable() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3"
         >
           <Button href="#download" variant="primary" size="md">
-            Start Free — No Credit Card
+            Start Free, No Credit Card
           </Button>
           <p className="text-sm text-gray-500">Free forever. Upgrade anytime.</p>
         </motion.div>

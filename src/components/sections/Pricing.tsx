@@ -7,13 +7,13 @@ const PLANS = [
     name: 'Free',
     price: '$0',
     period: 'forever',
-    description: 'Everything you need to start scanning smarter. No credit card required.',
+    description: 'Unlimited scanning, 3-store price comparison, scan history, and reviews. No credit card.',
     cta: 'Join Waitlist',
     ctaHref: '#download',
     variant: 'outline' as const,
     features: [
       'Unlimited barcode scans',
-      'Price comparison — Amazon, eBay & ThriftBooks',
+      'Price comparison: Amazon, eBay & ThriftBooks',
       'Aggregated reviews & ratings',
       'Scan history (last 30 items)',
       'Wishlist (up to 20 items)',
@@ -25,7 +25,7 @@ const PLANS = [
     name: 'Pro',
     price: '$9.99',
     period: 'per month',
-    description: 'For power users who scan seriously. AI-powered, unlimited everything.',
+    description: 'For FBA sellers sourcing at volume. 50+ stores, AI recommendations, and full CSV export.',
     cta: 'Get Early Access',
     ctaHref: '#download',
     variant: 'primary' as const,
@@ -97,7 +97,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed"
           >
-            No hidden fees. No credit card. The free plan is genuinely free — forever.
+            No hidden fees. No credit card. The free plan is genuinely free, forever.
           </motion.p>
         </div>
 
@@ -174,7 +174,7 @@ export default function Pricing() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-center text-xs text-gray-600 mt-10"
         >
-          Early access members lock in a discounted rate forever. Yearly plan coming at launch — save 33%.
+          Early access members lock in a discounted rate forever. Yearly plan coming at launch. Save 33%.
         </motion.p>
       </div>
     </section>

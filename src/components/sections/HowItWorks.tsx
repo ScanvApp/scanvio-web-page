@@ -57,8 +57,8 @@ export default function HowItWorks() {
             transition={{ duration: 0.5, delay: 0.16 }}
             className="mt-5 text-gray-400 text-base lg:text-lg max-w-xl mx-auto leading-relaxed"
           >
-            No learning curve. No setup. Just open, point, and know everything
-            you need before you buy.
+            Open the app, point at a barcode, get a BUY or PASS in under a second.
+            No setup, no manual lookup, no guesswork.
           </motion.p>
         </div>
 

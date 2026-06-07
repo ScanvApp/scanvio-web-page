@@ -304,7 +304,7 @@ export default function PlatformShowcase() {
             transition={{ duration: 0.5, delay: 0.16 }}
             className="mt-4 text-gray-400 text-base leading-relaxed"
           >
-            Your phone does the scouting. The dashboard tracks your profit, buy list, and scan history — all in one place.
+            Your phone does the scouting. The dashboard tracks your profit, buy list, and scan history.
           </motion.p>
         </div>
 

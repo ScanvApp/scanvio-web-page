@@ -5,19 +5,19 @@ const SCREENS = [
   {
     id: 'scan',
     label: 'Scan',
-    description: 'Point your camera at any barcode or book cover. GoSignal fires in under a second — buy or pass before you even set the book down.',
+    description: 'Point your camera at any barcode or book cover. GoSignal fires in under a second. Buy or pass before you even set the book down.',
     screen: <ScanScreen />,
   },
   {
     id: 'results',
     label: 'Compare',
-    description: 'See live FBA and FBM prices from 3 stores free, 50+ on Pro — spot the cheapest source and know your margin before you commit.',
+    description: 'See live FBA and FBM prices from 3 stores free, 50+ on Pro. Spot the cheapest source and know your margin before you commit.',
     screen: <ResultsScreen />,
   },
   {
     id: 'details',
     label: 'Decide',
-    description: 'ScanvEscore, sales rank trend, active FBA competition, and restriction flags all in one view — everything you need to decide fast.',
+    description: 'ScanvEscore, sales rank trend, active FBA competition, and restriction flags all in one view. Everything you need to decide fast.',
     screen: <DetailsScreen />,
   },
 ]

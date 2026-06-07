@@ -18,7 +18,7 @@ const TESTIMONIALS = [
     color: '#A855F7',
     rating: 5,
     quote:
-      'Found the same textbook $40 cheaper on eBay — directly from the scan result. Paid for the app in literally the first use.',
+      'Found the same textbook $40 cheaper on eBay, directly from the scan result. Paid for the app in literally the first use.',
   },
   {
     name: 'Priya K.',
@@ -27,7 +27,7 @@ const TESTIMONIALS = [
     color: '#06B6D4',
     rating: 5,
     quote:
-      'I use it every weekend at charity shops. The scan speed is wild — results show up before I can even put the book back on the shelf.',
+      'I use it every weekend at charity shops. The scan speed is wild. Results show up before I can even put the book back on the shelf.',
   },
   {
     name: 'Marcus L.',

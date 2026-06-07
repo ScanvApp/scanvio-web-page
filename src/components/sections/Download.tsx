@@ -162,7 +162,7 @@ function QRPlaceholder() {
           ))}
         </div>
       </div>
-      <p className="text-[10px] text-gray-500">Scan to join — link coming soon</p>
+      <p className="text-[10px] text-gray-500">Scan to join, link coming soon</p>
     </div>
   )
 }
@@ -201,7 +201,7 @@ export default function Download() {
         throw new Error('failed')
       }
     } catch {
-      setError('Something went wrong — please try again or email us at info@scanv.io')
+      setError('Something went wrong. Please try again or email info@scanv.io')
     } finally {
       setLoading(false)
     }
@@ -251,8 +251,7 @@ export default function Download() {
             viewport={{ once: true }}
             className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed"
           >
-            Scanvio is launching soon on iOS and Android. Join the waitlist and be
-            the first to know — plus get early access perks.
+            Join the waitlist and get early access when Scanvio launches on iOS and Android.
           </motion.p>
         </div>
 
@@ -314,10 +313,8 @@ export default function Download() {
               <p className="text-sm text-red-400 -mt-4">{error}</p>
             )}
 
-            {/* Honest launch note */}
             <p className="text-sm text-gray-500">
-              Be among the first to try Scanvio —{' '}
-              <span className="text-white font-medium">launching soon on iOS & Android.</span>
+              Early members lock in a discounted Pro rate at launch.
             </p>
 
             {/* Divider */}
@@ -332,10 +329,6 @@ export default function Download() {
                 <AppStoreBadge />
                 <PlayStoreBadge />
               </div>
-              <p className="text-xs text-gray-600 mt-3">
-                Already have early access?{' '}
-                <span className="text-brand-blue cursor-pointer hover:underline">Sign in</span>
-              </p>
             </div>
           </motion.div>
 

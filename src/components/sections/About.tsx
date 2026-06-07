@@ -7,13 +7,13 @@ const PILLARS = [
     icon: Target,
     title: 'Our Mission',
     description:
-      "FBA book sellers deserve real data at the point of sourcing — not guesswork. We built Scanvio so every scan gives you a clear buy or pass signal.",
+      "FBA book sellers deserve real data at the point of sourcing, not guesswork. We built Scanvio so every scan gives you a clear buy or pass signal.",
   },
   {
     icon: Zap,
     title: 'What We Build',
     description:
-      "A mobile scouting tool that pulls live Amazon SP-API data — profit score, sales rank, competition, and restriction flags — the moment you scan a barcode.",
+      "A mobile scouting tool that pulls live Amazon SP-API data: profit score, sales rank, competition, and restriction flags, the moment you scan a barcode.",
   },
   {
     icon: Users,
@@ -83,7 +83,7 @@ export default function About() {
             >
               Scanvio started with a real problem: processing hundreds of books at a sale
               with no reliable data. We built the tool that gives FBA sellers a clear
-              buy signal on every single scan — and we're not stopping at books.
+              buy signal on every single scan. We're not stopping at books.
             </motion.p>
 
             <motion.div
@@ -140,9 +140,9 @@ export default function About() {
           className="mt-20 lg:mt-28 grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 rounded-2xl overflow-hidden"
         >
           {[
-            { value: '50+', label: 'Stores compared' },
-            { value: '<1s', label: 'Scan speed' },
-            { value: '2026', label: 'Launch year' },
+            { value: '50+',  label: 'Stores compared' },
+            { value: '<1s',  label: 'Scan speed' },
+            { value: 'SP-API', label: 'Amazon data source' },
             { value: 'Free', label: 'Always free to start' },
           ].map((stat) => (
             <div

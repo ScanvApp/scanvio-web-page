@@ -108,7 +108,7 @@ export default function ROICalculator() {
   const weeklyProfit = booksPerWeek * profitPerSale - buyCost * booksPerWeek
   const monthlyProfit = weeklyProfit * 4.33
   const annualProfit = weeklyProfit * 52
-  const daysToPayPro = weeklyProfit > 0 ? (9.99 / (weeklyProfit / 7)).toFixed(1) : '—'
+  const daysToPayPro = weeklyProfit > 0 ? (9.99 / (weeklyProfit / 7)).toFixed(1) : 'N/A'
 
   const fmt$ = useCallback((n: number) =>
     n >= 1000
@@ -271,7 +271,7 @@ export default function ROICalculator() {
             </div>
 
             <Button href="#download" variant="primary" size="md" className="w-full justify-center">
-              Start Free — No Card Needed <ArrowRight size={16} />
+              Start Free, No Card Needed <ArrowRight size={16} />
             </Button>
           </div>
         </motion.div>

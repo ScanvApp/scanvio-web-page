@@ -53,8 +53,8 @@ export default function Community() {
               transition={{ duration: 0.55, delay: 0.08 }}
               className="text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] tracking-tight mb-5"
             >
-              Join before{' '}
-              <span className="gradient-text">everyone else.</span>
+              Get in while{' '}
+              <span className="gradient-text">spots are open.</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
@@ -63,7 +63,7 @@ export default function Community() {
               transition={{ duration: 0.5, delay: 0.14 }}
               className="text-gray-400 text-base leading-relaxed mb-8 max-w-md"
             >
-              We're still pre-launch. Getting in now means actual perks — not just a spot in an email queue.
+              Scanvio is in active development and rolling out to early members first. Getting in now means actual perks, not just a spot in a queue.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 12 }}

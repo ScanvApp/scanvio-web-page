@@ -5,16 +5,24 @@ import Button from '../ui/Button'
 
 const FAQS = [
   {
+    q: 'Why do some dashboard widgets show "Pending Amazon SP-API app approval"?',
+    a: 'Scanvio currently runs against the Amazon SP-API Sandbox while our production access application is under review. Some advanced reporting widgets — Min & Max Report, Buy Box Report, and Repricing Report — require production API credentials and show a pending state in sandbox mode. This is expected sandbox behavior. All core features (book lookup, live pricing, BSR, FBA competition, restriction flags, inventory, and orders) work correctly against the sandbox and will continue to work in production once approval is granted.',
+  },
+  {
+    q: 'Who built Scanvio?',
+    a: 'Scanvio is designed and built by tsntesch.org, a software development organization focused on e-commerce tools. All SP-API integration, data handling, and compliance responsibilities are managed by tsntesch.org.',
+  },
+  {
     q: 'Do I need an Amazon seller account to use Scanvio?',
     a: 'Scanvio is built for Amazon FBA book sellers and serious book resellers. You don\'t need a seller account to start scanning, but the profit score, GoSignal, BSR data, and FBA fee calculator are designed specifically for sourcing inventory to sell on Amazon. If you\'re running a reselling business, connecting your Amazon seller account unlocks the full data set.',
   },
   {
     q: 'Is the Free plan really free forever?',
-    a: 'Yes, genuinely. No credit card required, no trial period, no expiry date. The Free plan includes unlimited barcode scanning, price comparison across 3 stores (Amazon, eBay, and ThriftBooks), and aggregated reviews — forever. Upgrading to Pro ($9.99/month) unlocks 50+ store comparisons, AI recommendations, price drop alerts, and CSV export.',
+    a: 'Yes, genuinely. No credit card required, no trial period, no expiry date. The Free plan includes unlimited barcode scanning, price comparison across 3 stores (Amazon, eBay, and ThriftBooks), and aggregated reviews, with no expiration. Upgrading to Pro ($9.99/month) unlocks 50+ store comparisons, AI recommendations, price drop alerts, and CSV export.',
   },
   {
     q: 'Does Scanvio work without an internet connection?',
-    a: 'Your scan history and saved wishlist items are always available offline. Live price lookups need a connection — that part won\'t work without signal.',
+    a: 'Your scan history and saved wishlist items are always available offline. Live price lookups need a connection; that part won\'t work without signal.',
   },
   {
     q: 'How is the ScanvEscore™ calculated?',
@@ -22,19 +30,19 @@ const FAQS = [
   },
   {
     q: 'Which countries and stores are supported?',
-    a: 'Scanvio currently compares prices across 50+ US retailers including Amazon, eBay, ThriftBooks, AbeBooks, Half Price Books, and more. International support is coming — sign up and we\'ll let you know when your region goes live.',
+    a: 'Scanvio currently compares prices across 50+ US retailers including Amazon, eBay, ThriftBooks, AbeBooks, Half Price Books, and more. International support is coming. Sign up and we\'ll let you know when your region goes live.',
   },
   {
     q: 'What categories does Scanvio support at launch?',
-    a: 'Books are fully supported at launch — including barcode scanning, cover recognition, ISBN lookup, and all price comparison features. Electronics, fashion, and groceries are planned for future updates. Join the waitlist to be first when new categories launch.',
+    a: 'Books are fully supported at launch, including barcode scanning, cover recognition, ISBN lookup, and all price comparison features. Electronics, fashion, and groceries are planned for future updates.',
   },
   {
     q: 'How accurate are the prices shown?',
-    a: 'Prices are fetched live from each retailer at the time of your scan, so they reflect current availability and pricing. Amazon prices are pulled directly via the SP-API — not cached, not approximated.',
+    a: 'Prices are fetched live from each retailer at the time of your scan. Amazon prices are pulled directly via the SP-API, not cached or approximated.',
   },
   {
     q: 'How does Scanvio connect to my Amazon seller account?',
-    a: 'Scanvio uses Login with Amazon (LWA) — Amazon\'s official OAuth flow — to securely connect your seller account. You authorize Scanvio once inside the app and we use that to pull live pricing, BSR, and competition data directly via the Amazon SP-API. We never store your Amazon credentials, and you can revoke access at any time from your Amazon Seller Central settings.',
+    a: 'Scanvio uses Login with Amazon (LWA), Amazon\'s official OAuth flow, to securely connect your seller account. You authorize Scanvio once inside the app and we use that to pull live pricing, BSR, and competition data directly via the Amazon SP-API. We never store your Amazon credentials. You can revoke access at any time from Amazon Seller Central under Apps and Services.',
   },
   {
     q: 'Can I cancel my Pro plan anytime?',
@@ -42,11 +50,11 @@ const FAQS = [
   },
   {
     q: 'When is the app launching on iOS and Android?',
-    a: 'We\'re in pre-launch right now. Join the waitlist and you\'ll be first in line — early members also lock in a lower Pro rate at launch.',
+    a: 'We\'re in active development right now. Join the waitlist and you\'ll be first in line. Early members also lock in a lower Pro rate at launch.',
   },
   {
     q: 'How is Scanvio different from ScoutIQ or Scoutly?',
-    a: 'The biggest difference: Scanvio is free to start — no trial, no credit card. Competitors start at $10–$30/month with no free tier. Scanvio also aggregates reviews from multiple sources (Amazon, Goodreads, and more) which no competitor currently does, and our Pro plan adds AI-powered recommendations that learn from your scanning history.',
+    a: 'The biggest difference: Scanvio is free to start, no trial, no credit card. Competitors start at $10-$30/month with no free tier. Scanvio also aggregates reviews from multiple sources (Amazon, Goodreads, and more) which no competitor currently does, and our Pro plan adds AI-powered recommendations based on your real sourcing history.',
   },
 ]
 
@@ -136,7 +144,7 @@ export default function FAQ() {
               transition={{ duration: 0.5, delay: 0.14 }}
               className="text-gray-400 text-base leading-relaxed mb-8"
             >
-              Everything you need to know before you join. Can't find your answer?
+              Common questions from FBA sellers. Still have something else?
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 12 }}

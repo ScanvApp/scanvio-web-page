@@ -46,7 +46,7 @@ function HeroEmailForm() {
         throw new Error('failed')
       }
     } catch {
-      setError('Something went wrong — please try again.')
+      setError('Something went wrong. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -166,7 +166,7 @@ export default function Hero() {
               className="text-base lg:text-lg text-gray-400 leading-relaxed max-w-md"
             >
               Scan any barcode or book cover and instantly know if a book is worth buying
-              to resell — profit score, sales rank, and competition in one scan. Starting with books.
+              to resell: profit score, sales rank, and competition in one scan. Starting with books.
             </motion.p>
 
             {/* Email form */}

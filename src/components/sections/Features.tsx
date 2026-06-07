@@ -119,7 +119,7 @@ function UsedPricesVisual() {
   return (
     <div className="flex flex-col gap-4 px-6 py-8">
       <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest mb-1">
-        Used Price Distribution — 72 active listings
+        Used Price Distribution: 72 Active Listings
       </p>
       <div className="flex items-end gap-1.5" style={{ height: maxPx }}>
         {bars.map((b, i) => (
@@ -175,7 +175,7 @@ const SPOTLIGHTS: Spotlight[] = [
     title: 'One number that tells you everything.',
     body: 'Our 0–100 profit score looks at ROI, Amazon sales rank, and how many sellers you\'re competing with. High score means buy it. Low score means leave it. No math required.',
     bullets: [
-      'Rank is weighted properly — a #5,000 book is very different from a #500,000 book',
+      'Rank is weighted properly. A #5,000 book behaves very differently from a #500,000 book.',
       'Pulls fresh data from Amazon on every scan, never cached',
       'Built specifically for Amazon FBA book sellers',
     ],
@@ -186,10 +186,10 @@ const SPOTLIGHTS: Spotlight[] = [
   {
     pill: 'GoSignal',
     title: 'Green light. Go. Red light. Pass.',
-    body: 'Set your minimum eScore once and GoSignal does the rest. Clear green or red on every scan — no second-guessing at a busy library sale.',
+    body: 'Set your minimum eScore once and GoSignal does the rest. Clear green or red on every scan, no second-guessing at a busy library sale.',
     bullets: [
       'Customizable eScore, minimum profit, and rank cutoff',
-      'Works without internet — great for library sales and thrift stores',
+      'Works without internet. Great for library sales and thrift stores.',
       'Built for sorting through hundreds of books fast',
     ],
     accent: '#10B981',
@@ -201,7 +201,7 @@ const SPOTLIGHTS: Spotlight[] = [
     title: 'See the whole market in one glance.',
     body: 'Every active used listing, laid out visually. Spot the price ceiling, see how much competition there is, and know exactly where your copy fits.',
     bullets: [
-      'Color-coded by price range — low, mid, and high',
+      'Color-coded by price range: low, mid, and high',
       'Filter to FBA sellers only or see every offer',
       'Your buy cost sits right alongside so margin is always front and center',
     ],
@@ -222,21 +222,21 @@ type GridFeature = {
 const GRID_FEATURES: GridFeature[] = [
   { icon: ScanLine,     title: 'Instant Scanning',       body: 'Sub-second barcode and cover recognition on any book.',         accent: '#4F8EF7' },
   { icon: DollarSign,   title: 'Net Profit Calculator',  body: 'True profit after Amazon fees, prep cost, and shipping.',       accent: '#10B981' },
-  { icon: TrendingUp,   title: 'Sales Rank / BSR',       body: 'Current rank and trend — know if demand is rising or fading.',  accent: '#F59E0B' },
+  { icon: TrendingUp,   title: 'Sales Rank / BSR',       body: 'Current rank and trend. Know if demand is rising or fading.',  accent: '#F59E0B' },
   { icon: Users,        title: 'Competition Analysis',   body: 'FBA seller count, Buy Box holder, and how many copies are out there.',  accent: '#06B6D4' },
   { icon: Target,       title: 'Buy List',               body: 'Pre-load ISBNs before a sale. Hunt with a plan.',              accent: '#EC4899' },
-  { icon: Layers,       title: 'Sorter Mode',            body: 'Bin A / B / C rapid scanning — hundreds of books per hour.',   accent: '#8B5CF6' },
-  { icon: ShoppingCart, title: 'Price Comparison',       body: '3 stores free. 50+ stores on Pro — always find the cheapest source.',   accent: '#10B981' },
+  { icon: Layers,       title: 'Sorter Mode',            body: 'Bin A / B / C rapid scanning. Hundreds of books per hour.',   accent: '#8B5CF6' },
+  { icon: ShoppingCart, title: 'Price Comparison',       body: '3 stores free. 50+ stores on Pro. Always find the cheapest source.',   accent: '#10B981' },
   { icon: Star,         title: 'Aggregated Reviews',     body: 'Goodreads + Amazon ratings combined in one instant view.',     accent: '#F59E0B' },
   { icon: Clock,        title: 'Scan History',           body: 'Full searchable history by title, ISBN, or author.',           accent: '#A855F7' },
-  { icon: WifiOff,      title: 'Works Offline',          body: 'Cached data functions with no signal — critical at sales.',    accent: '#6B7280' },
+  { icon: WifiOff,      title: 'Works Offline',          body: 'Cached data functions with no signal. Critical at sales.',    accent: '#6B7280' },
   { icon: Filter,       title: 'Custom Triggers',        body: 'Fine-tune GoSignal with rank, profit, and eScore floors.',     accent: '#4F8EF7' },
-  { icon: BookOpen,     title: 'Live Amazon Pricing',    body: 'Real prices from SP-API — never cached, never stale.',         accent: '#10B981' },
-  { icon: AlertTriangle, title: 'ASIN Restriction Alerts', body: 'Flags IP complaints, brand-gated, and hazmat ASINs before you buy — never get stuck with unsellable stock.', accent: '#EF4444', pro: true },
+  { icon: BookOpen,     title: 'Live Amazon Pricing',    body: 'Real prices from SP-API, never cached or stale.',              accent: '#10B981' },
+  { icon: AlertTriangle, title: 'ASIN Restriction Alerts', body: 'Flags IP complaints, brand-gated, and hazmat ASINs before you buy. Never get stuck with unsellable stock.', accent: '#EF4444', pro: true },
   { icon: Bell,         title: 'Price Drop Alerts',      body: 'Notified the moment a watched item hits your target price.',   accent: '#F97316', pro: true },
   { icon: Zap,          title: 'AI Recommendations',     body: 'Discover books in your niche that flip consistently.',         accent: '#06B6D4', pro: true },
   { icon: FileDown,     title: 'CSV Export',             body: 'Export your full scan history for spreadsheet analysis.',      accent: '#6B7280', pro: true },
-  { icon: BarChart2,    title: 'Price & Rank History',   body: "90-day price and sales rank history — see if demand is climbing or dying before you commit.",  accent: '#A855F7', pro: true },
+  { icon: BarChart2,    title: 'Price & Rank History',   body: "90-day price and sales rank history. See if demand is climbing or dying before you commit.",  accent: '#A855F7', pro: true },
 ]
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
@@ -367,7 +367,7 @@ export default function Features() {
             transition={{ duration: 0.5, delay: 0.16 }}
             className="mt-5 text-gray-400 text-base lg:text-lg max-w-2xl mx-auto leading-relaxed"
           >
-            From your first scan to your thousandth — Scanvio gives you real data,
+            From your first scan to your thousandth. Scanvio gives you real data,
             clear signals, and the speed to process more books than anyone else on the floor.
           </motion.p>
         </div>

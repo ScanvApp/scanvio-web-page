@@ -36,7 +36,7 @@ export default function TermsOfUse() {
         </div>
 
         <Section title="1. Eligibility">
-          <p>You must be at least 16 years of age to use the Service. Because Scanvio is designed primarily for commercial activities — including product sourcing, price comparison, and reselling — it is not appropriate for or directed at users under 16. By using the Service, you represent and warrant that:</p>
+          <p>You must be at least 16 years of age to use the Service. Scanvio is designed for commercial product sourcing, price comparison, and reselling and is not appropriate for users under 16. By using the Service, you represent and warrant that:</p>
           <ul className="list-disc pl-5 space-y-1.5">
             <li>You are at least 16 years of age;</li>
             <li>You have the legal capacity to enter into a binding agreement; and</li>
@@ -55,7 +55,7 @@ export default function TermsOfUse() {
             <li>Maintain scan history, wishlists, and buy lists.</li>
             <li>Access AI-powered product recommendations (Pro plan only).</li>
           </ul>
-          <p>The Service is intended for personal use, consumer research, and product reselling purposes. We reserve the right to modify, suspend, or discontinue any feature or aspect of the Service at any time, with or without notice.</p>
+          <p>The Service is intended for product sourcing and Amazon FBA reselling. We may modify, suspend, or discontinue any feature at any time.</p>
         </Section>
 
         <Section title="3. Account Registration">
@@ -73,7 +73,7 @@ export default function TermsOfUse() {
         <Section title="4. Subscription Plans and Billing">
           <p><span className="text-white font-semibold">Free Plan:</span> Available at no cost, with no credit card required. Includes unlimited barcode scanning, price comparison across 3 stores (Amazon, eBay, and ThriftBooks), scan history, and aggregated reviews. The Free plan has no expiration date.</p>
 
-          <p><span className="text-white font-semibold">Pro Plan:</span> Billed at $4.99 per month. Pro plan features include:</p>
+          <p><span className="text-white font-semibold">Pro Plan:</span> Billed at $9.99 per month. Pro plan features include:</p>
           <ul className="list-disc pl-5 space-y-1.5">
             <li>AI-powered product recommendations.</li>
             <li>Price drop alerts and notifications.</li>
@@ -97,8 +97,8 @@ export default function TermsOfUse() {
           <p>By using the Service, you agree not to:</p>
           <ul className="list-disc pl-5 space-y-1.5">
             <li>Violate any applicable federal, state, local, or international law or regulation.</li>
-            <li><span className="text-white font-semibold">Scrape or extract data</span> — use web scraping, crawling, data mining, screen scraping, or any automated means to systematically access, copy, or aggregate data from the Service — including but not limited to price data, ScanvEscore™ results, product data, or reviews — without our prior written consent.</li>
-            <li><span className="text-white font-semibold">Use automated tools</span> — interact with the Service using bots, scripts, spiders, browser automation tools, or any mechanism other than through our official application or any APIs we expressly make available.</li>
+            <li><span className="text-white font-semibold">Scrape or extract data:</span> use web scraping, crawling, data mining, screen scraping, or any automated means to access, copy, or aggregate data from the Service, including price data, ScanvEscore™ results, product data, or reviews, without our prior written consent.</li>
+            <li><span className="text-white font-semibold">Use automated tools:</span> interact with the Service using bots, scripts, spiders, browser automation tools, or any mechanism other than our official application or any APIs we expressly make available.</li>
             <li>Attempt to reverse engineer, decompile, disassemble, or otherwise derive the source code of any part of the Service.</li>
             <li>Resell, sublicense, redistribute, or otherwise commercialize access to the Service or its data output.</li>
             <li>Interfere with or disrupt the Service, its servers, networks, or infrastructure, including through denial-of-service attacks.</li>
@@ -111,13 +111,13 @@ export default function TermsOfUse() {
         </Section>
 
         <Section title="6. Intellectual Property">
-          <p>All content, features, and functionality of the Service — including but not limited to the Scanvio name, logo, ScanvEscore™ scoring methodology, application design, software, text, graphics, and data compilations — are owned by Scanvio or its licensors and are protected by United States and international intellectual property laws.</p>
+          <p>All content, features, and functionality of the Service, including the Scanvio name, logo, ScanvEscore™ scoring methodology, application design, software, text, graphics, and data compilations, are owned by Scanvio or its licensors and are protected by United States and international intellectual property laws.</p>
           <p><span className="text-white font-semibold">ScanvEscore™</span> is a proprietary trademark of Scanvio. Any unauthorized use of this mark is strictly prohibited.</p>
           <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to access and use the Service for your personal and commercial reselling purposes. No other rights are granted. You acquire no ownership interest in the Service or its underlying intellectual property.</p>
         </Section>
 
         <Section title="7. Third-Party Data and Price Accuracy">
-          <p>Prices, product availability, sales rank data, and ratings displayed in the Service are sourced from third-party retailers and data providers, including Amazon and eBay. While we strive to display timely and accurate information:</p>
+          <p>Prices, availability, sales rank, and ratings are sourced live from Amazon and other retailers. Data may change between the time of scan and the time of purchase:</p>
           <ul className="list-disc pl-5 space-y-1.5">
             <li>We make no representations or warranties regarding the accuracy, completeness, or timeliness of third-party data.</li>
             <li>Prices and availability may change between the time of scanning and the time of purchase.</li>
@@ -129,12 +129,16 @@ export default function TermsOfUse() {
         <Section title="8. Amazon SP-API Compliance">
           <p>Scanvio uses Amazon's Selling Partner API ("Amazon SP-API") to retrieve product, pricing, and availability data. Your use of any features powered by Amazon data is subject to the following restrictions:</p>
           <ul className="list-disc pl-5 space-y-1.5">
-            <li><span className="text-white font-semibold">Permitted Use:</span> Amazon-sourced data displayed in the Service — including pricing, sales rank, and product information — is provided solely for your individual product research and reselling decisions. You may not export, reproduce, redistribute, sublicense, or commercially exploit Amazon-sourced data in bulk.</li>
+            <li><span className="text-white font-semibold">Permitted Use:</span> Amazon-sourced data displayed in the Service (including pricing, sales rank, and product information) is provided solely for your individual product sourcing and reselling decisions. You may not export, reproduce, redistribute, sublicense, or commercially exploit Amazon-sourced data in bulk.</li>
             <li><span className="text-white font-semibold">Prohibited Use:</span> You may not use Amazon-sourced data to train machine learning models, build competing price databases, aggregate data for any commercial purpose other than individual product research, or circumvent or attempt to bypass Amazon's own systems through the Service.</li>
             <li><span className="text-white font-semibold">No Amazon Affiliation:</span> Scanvio is an independent third-party application and is not affiliated with, endorsed by, sponsored by, or in any way officially connected with Amazon.com, Inc. "Amazon," "Kindle," and all related marks are registered trademarks of Amazon.com, Inc.</li>
             <li><span className="text-white font-semibold">Amazon Developer Agreement:</span> Our access to the SP-API is governed by Amazon's Developer Agreement, Acceptable Use Policy, and Data Protection Policy, which impose additional obligations on how Amazon data is handled. In the event of conflict between these Terms and Amazon's Developer Agreement with respect to Amazon-sourced data, Amazon's Developer Agreement shall control.</li>
             <li><span className="text-white font-semibold">API Availability:</span> Amazon may restrict, suspend, or terminate our SP-API access at any time and without liability to you. We make no guarantee of continuous Amazon data availability. If SP-API access is interrupted, affected features may be temporarily unavailable.</li>
           </ul>
+        </Section>
+
+        <Section title="9. Privacy and Data Protection">
+          <p>Your use of the Service is governed by our <a href="/privacy" className="text-brand-blue hover:underline">Privacy Policy</a>, which is incorporated into these Terms by reference. Our handling of Amazon SP-API data is further governed by our <a href="/developer" className="text-brand-blue hover:underline">SP-API Data Use</a> policy. By using the Service, you consent to the data practices described in both documents.</p>
         </Section>
 
         <Section title="10. Disclaimer of Warranties">
@@ -143,7 +147,7 @@ export default function TermsOfUse() {
         </Section>
 
         <Section title="11. Limitation of Liability">
-          <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL SCANVIO, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES — INCLUDING LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS OPPORTUNITIES — ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS TO OR USE OF (OR INABILITY TO USE) THE SERVICE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+          <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL SCANVIO, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES (INCLUDING LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS OPPORTUNITIES) ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS TO OR USE OF THE SERVICE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
           <p>IN NO EVENT SHALL OUR TOTAL AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS ARISING UNDER OR RELATED TO THESE TERMS EXCEED THE GREATER OF: (A) THE TOTAL AMOUNTS PAID BY YOU TO SCANVIO IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE CLAIM; OR (B) TWENTY-FIVE DOLLARS ($25.00).</p>
           <p>Some states do not allow the exclusion or limitation of certain damages, so the above limitations may not apply to you in full.</p>
         </Section>
@@ -157,7 +161,7 @@ export default function TermsOfUse() {
           <ul className="list-disc pl-5 space-y-1.5">
             <li>Your license to use the Service ceases immediately.</li>
             <li>You may request deletion of your personal data pursuant to our Privacy Policy.</li>
-            <li>All provisions of these Terms that by their nature should survive termination — including ownership, warranty disclaimers, indemnification, and limitation of liability — will remain in full force and effect.</li>
+            <li>All provisions of these Terms that by their nature should survive termination (including ownership, warranty disclaimers, indemnification, and limitation of liability) will remain in full force and effect.</li>
           </ul>
           <p>You may terminate your account at any time by contacting us at <span className="text-brand-blue">info@scanv.io</span>.</p>
         </Section>
@@ -182,9 +186,10 @@ export default function TermsOfUse() {
         </Section>
 
         <Section title="17. Contact Us">
-          <p>If you have any questions about these Terms of Use, please contact us:</p>
+          <p>Questions about these Terms:</p>
           <div className="mt-3 p-4 rounded-xl border border-white/8 bg-white/[0.02]">
             <p className="text-white font-semibold mb-1">Scanvio</p>
+            <p className="text-gray-500 text-xs mb-2">Developed and operated by <a href="https://tsntesch.org" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">tsntesch.org</a></p>
             <p>Legal inquiries: <span className="text-brand-blue">legal@scanv.io</span></p>
             <p>General inquiries: <span className="text-brand-blue">info@scanv.io</span></p>
           </div>
