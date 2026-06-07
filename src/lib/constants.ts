@@ -23,8 +23,8 @@ export const FEATURE_CARDS: FeatureCard[] = [
   },
   {
     icon: 'tag',
-    title: 'Find the Best Deals',
-    description: 'Compare prices across multiple stores.',
+    title: 'Source at the Right Price',
+    description: 'Compare Amazon FBA prices and margins across 50+ stores instantly.',
   },
   {
     icon: 'grid',
@@ -51,16 +51,16 @@ export const STEPS: Step[] = [
   {
     number: 3,
     icon: 'layers',
-    title: 'See Everything',
+    title: 'Get Your Signal',
     description:
-      'Instant prices from 3 stores free (50+ on Pro), aggregated reviews, ratings, and full product details.',
+      'ScanvEscore, sales rank, live FBA competition, and net profit — all on one screen, in under a second.',
   },
   {
     number: 4,
     icon: 'check-circle',
-    title: 'Decide with Confidence',
+    title: 'Buy or Pass — Fast',
     description:
-      'Compare options, save to your wishlist, or buy directly — all without leaving the app.',
+      'GoSignal gives you a clear BUY IT or PASS based on your own thresholds. Process hundreds of books per hour with no second-guessing.',
   },
 ]
 

@@ -5,19 +5,19 @@ const SCREENS = [
   {
     id: 'scan',
     label: 'Scan',
-    description: 'Point your camera at any barcode or cover. Results in under a second.',
+    description: 'Point your camera at any barcode or book cover. GoSignal fires in under a second — buy or pass before you even set the book down.',
     screen: <ScanScreen />,
   },
   {
     id: 'results',
     label: 'Compare',
-    description: '3 stores free. Unlock 50+ with Pro — side by side, so you always pay less.',
+    description: 'See live FBA and FBM prices from 3 stores free, 50+ on Pro — spot the cheapest source and know your margin before you commit.',
     screen: <ResultsScreen />,
   },
   {
     id: 'details',
     label: 'Decide',
-    description: 'Aggregated reviews, ratings, and full details — all in one place.',
+    description: 'ScanvEscore, sales rank trend, active FBA competition, and restriction flags all in one view — everything you need to decide fast.',
     screen: <DetailsScreen />,
   },
 ]
@@ -200,19 +200,16 @@ function DetailsScreen() {
         </div>
       </div>
 
-      {/* Mini reviews */}
+      {/* Seller data rows */}
       <div className="flex-1 flex flex-col gap-2 px-4 overflow-hidden">
         {[
-          'Absolutely gripping from start to finish.',
-          'One of the best I\'ve read this year.',
-        ].map((review, i) => (
-          <div key={i} className="px-3 py-2.5 rounded-xl bg-white/5 border border-white/8">
-            <div className="flex gap-0.5 mb-1.5">
-              {[...Array(5)].map((_, j) => (
-                <div key={j} className="w-2 h-2 rounded-sm bg-amber-400/70" />
-              ))}
-            </div>
-            <span className="text-[9px] text-white/60 leading-relaxed">{review}</span>
+          { label: 'FBA Sellers',  value: '14 active', color: '#F59E0B' },
+          { label: 'Buy Box',      value: 'FBA only',  color: '#10B981' },
+          { label: 'Restriction',  value: 'None',       color: '#10B981' },
+        ].map((row) => (
+          <div key={row.label} className="flex items-center justify-between px-3 py-2.5 rounded-xl bg-white/5 border border-white/8">
+            <span className="text-[9px] text-white/40 font-medium">{row.label}</span>
+            <span className="text-[10px] font-bold" style={{ color: row.color }}>{row.value}</span>
           </div>
         ))}
       </div>
@@ -265,8 +262,8 @@ export default function AppShowcase() {
               transition={{ duration: 0.55, delay: 0.08 }}
               className="text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] tracking-tight mb-6"
             >
-              Three taps to{' '}
-              <span className="gradient-text">smarter shopping.</span>
+              Scan. Score.{' '}
+              <span className="gradient-text">Source smarter.</span>
             </motion.h2>
 
             {/* Tab buttons */}

@@ -7,19 +7,19 @@ const PILLARS = [
     icon: Target,
     title: 'Our Mission',
     description:
-      "Nobody should have to guess if they're getting a good deal. We built Scanvio so you always know — before you buy.",
+      "FBA book sellers deserve real data at the point of sourcing — not guesswork. We built Scanvio so every scan gives you a clear buy or pass signal.",
   },
   {
     icon: Zap,
     title: 'What We Build',
     description:
-      'Point your phone at anything and instantly see live prices, real reviews, and whether it\'s actually worth buying — all in under a second.',
+      "A mobile scouting tool that pulls live Amazon SP-API data — profit score, sales rank, competition, and restriction flags — the moment you scan a barcode.",
   },
   {
     icon: Users,
     title: 'Who We Are',
     description:
-      "We're a small team who got tired of overpaying for things. Scanvio is the tool we always wished existed.",
+      "A small team of builders with experience in e-commerce and data. We built the tool serious resellers actually need at library sales, thrift stores, and book fairs.",
   },
 ]
 
@@ -69,8 +69,8 @@ export default function About() {
               viewport={{ once: true }}
               className="text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] tracking-tight"
             >
-              Built for smarter{' '}
-              <span className="gradient-text">shoppers.</span>
+              Built for serious{' '}
+              <span className="gradient-text">book resellers.</span>
             </motion.h2>
 
             <motion.p
@@ -81,9 +81,9 @@ export default function About() {
               viewport={{ once: true }}
               className="mt-6 text-gray-400 text-base lg:text-lg leading-relaxed"
             >
-              Scanvio started with a simple frustration: standing in a store,
-              not knowing if you're getting ripped off or if the book is even any good.
-              We fixed that — and we're not stopping at books.
+              Scanvio started with a real problem: processing hundreds of books at a sale
+              with no reliable data. We built the tool that gives FBA sellers a clear
+              buy signal on every single scan — and we're not stopping at books.
             </motion.p>
 
             <motion.div
