@@ -36,19 +36,18 @@ function ScanScreen() {
 
       {/* Viewfinder */}
       <div className="flex-1 relative flex items-center justify-center mx-4 my-3 rounded-2xl overflow-hidden bg-[#060b12]">
-        {/* Simulated camera feed */}
         <div className="absolute inset-0" style={{
           background: 'radial-gradient(ellipse at 50% 60%, #1a2540 0%, #060b12 70%)',
         }} />
 
-        {/* Simulated book spine */}
+        {/* Book spine */}
         <div className="absolute w-20 h-32 rounded-md bg-gradient-to-br from-slate-600 to-slate-800 shadow-lg flex flex-col items-center justify-end p-2 gap-0.5">
           <div className="w-full h-1.5 rounded-full bg-white/20" />
           <div className="w-3/4 h-1 rounded-full bg-white/15" />
           <div className="w-1/2 h-1 rounded-full bg-white/10" />
         </div>
 
-        {/* Scan frame corners */}
+        {/* Scan corners */}
         {[['top-[18%] left-[15%]','border-t-2 border-l-2'],
           ['top-[18%] right-[15%]','border-t-2 border-r-2'],
           ['bottom-[18%] left-[15%]','border-b-2 border-l-2'],
@@ -64,15 +63,14 @@ function ScanScreen() {
           style={{ position: 'absolute' }}
         />
 
-        {/* Bottom label */}
         <div className="absolute bottom-4 left-0 right-0 text-center text-[9px] text-white/50">
-          Align barcode or cover
+          Align barcode or ISBN
         </div>
       </div>
 
-      {/* Bottom tab bar */}
+      {/* Nav bar matching real app */}
       <div className="flex justify-around px-4 py-3 border-t border-white/5">
-        {['History', 'Scan', 'Wishlist'].map((tab, i) => (
+        {['History', 'Scan', 'Buy List'].map((tab, i) => (
           <div key={tab} className="flex flex-col items-center gap-0.5">
             <div className={`w-4 h-4 rounded-sm ${i === 1 ? 'bg-brand-blue' : 'bg-white/20'}`} />
             <span className={`text-[7px] ${i === 1 ? 'text-brand-blue' : 'text-white/30'}`}>{tab}</span>
@@ -87,42 +85,44 @@ function ScanScreen() {
 }
 
 function ResultsScreen() {
+  // Real data from the actual app (Man of Ideas — from buylist screenshot)
   const stores = [
-    { name: 'Amazon', price: '$8.99',  badge: 'Lowest', color: '#10B981' },
-    { name: 'eBay',   price: '$9.50',  badge: null,     color: null },
-    { name: 'Barnes & Noble', price: '$12.99', badge: null, color: null },
-    { name: 'Half Price Books', price: '$4.99', badge: null, color: null },
+    { name: 'Amazon FBA', price: '$32.49', badge: 'Best',  color: '#10B981' },
+    { name: 'eBay',       price: '$28.99', badge: null,    color: null },
+    { name: 'ThriftBooks', price: '$18.50', badge: null,   color: null },
   ]
 
   return (
     <div className="flex flex-col h-full bg-[#0a0f1a]">
       <div className="flex justify-between items-center px-4 pt-10 pb-2 text-[8px] text-white/40 font-medium">
         <span>9:41</span>
-        <span className="tracking-widest">PRICES</span>
+        <span className="tracking-widest">SCOUT</span>
         <div className="w-6 h-2 rounded-sm border border-white/30 relative">
           <div className="absolute inset-0.5 right-1 rounded-sm bg-white/50" />
         </div>
       </div>
 
-      {/* Book info */}
+      {/* Book info — real title from screenshot */}
       <div className="flex items-center gap-3 mx-4 mt-1 mb-3 p-3 rounded-xl bg-white/5 border border-white/8">
-        <div className="w-10 h-14 rounded-md bg-gradient-to-br from-brand-blue/40 to-brand-purple/40 shrink-0" />
+        <div className="w-10 h-14 rounded-md bg-gradient-to-br from-slate-700 to-slate-900 shrink-0 flex items-end justify-center pb-1">
+          <div className="w-6 h-1 rounded-full bg-white/20" />
+        </div>
         <div className="flex-1 min-w-0">
-          <div className="w-4/5 h-2.5 rounded-full bg-white/40 mb-1.5" />
-          <div className="w-3/5 h-2 rounded-full bg-white/20 mb-2" />
-          <div className="flex gap-1">
-            {[...Array(5)].map((_, i) => (
-              <div key={i} className="w-2 h-2 rounded-sm bg-amber-400/70" />
-            ))}
+          <p className="text-[9px] font-bold text-white/80 leading-tight mb-0.5">Man of Ideas</p>
+          <p className="text-[8px] text-white/35 mb-1.5">James Rosen</p>
+          <div className="flex items-center gap-1.5">
+            <span className="text-[8px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400">Good</span>
+            <span className="text-[8px] text-white/30">Rank #4,201</span>
           </div>
         </div>
       </div>
 
-      {/* Price label */}
-      <div className="px-4 mb-2">
-        <span className="text-[9px] font-bold text-white/40 uppercase tracking-widest">
-          50+ Stores · Live Prices
-        </span>
+      {/* Profit summary — real data */}
+      <div className="mx-4 mb-2 px-3 py-2 rounded-xl bg-emerald-500/8 border border-emerald-500/15 flex items-center justify-between">
+        <span className="text-[9px] text-white/50">Max buy</span>
+        <span className="text-[10px] font-bold text-white">$5.00</span>
+        <span className="text-[9px] text-white/50">Est. profit</span>
+        <span className="text-[10px] font-bold text-emerald-400">+54.2%</span>
       </div>
 
       {/* Price list */}
@@ -149,9 +149,6 @@ function ResultsScreen() {
             </span>
           </motion.div>
         ))}
-        <div className="flex items-center justify-center py-1">
-          <span className="text-[8px] text-white/25">+ 46 more stores</span>
-        </div>
       </div>
 
       <div className="h-8 flex items-center justify-center">
@@ -172,53 +169,54 @@ function DetailsScreen() {
         </div>
       </div>
 
-      {/* Hero */}
-      <div className="flex gap-3 mx-4 mt-1 mb-4">
-        <div className="w-16 h-22 rounded-lg bg-gradient-to-br from-brand-blue/50 to-brand-purple/50 shrink-0" style={{ height: 88 }} />
-        <div className="flex-1">
-          <div className="w-full h-3 rounded-full bg-white/40 mb-1.5" />
-          <div className="w-3/4 h-2.5 rounded-full bg-white/25 mb-2" />
-          <div className="flex gap-0.5 mb-2">
-            {[...Array(5)].map((_, i) => (
-              <div key={i} className="w-2.5 h-2.5 rounded-sm bg-amber-400/80" />
-            ))}
-          </div>
-          <span className="text-[8px] text-white/40">4.8 · aggregated from Goodreads &amp; Amazon</span>
+      {/* ScanvEscore + GoSignal row — matching real app layout */}
+      <div className="flex gap-2 mx-4 mt-2 mb-3">
+        <div className="flex-1 px-3 py-2.5 rounded-xl bg-white/5 border border-white/8">
+          <span className="text-[7px] font-bold uppercase tracking-widest text-brand-blue block mb-0.5">ScanvEscore™</span>
+          <span className="text-[22px] font-extrabold text-white leading-none">83</span>
+        </div>
+        <div className="flex-1 px-3 py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex flex-col justify-between">
+          <span className="text-[7px] font-bold uppercase tracking-widest text-emerald-400 block">GoSignal</span>
+          <span className="text-[18px] font-extrabold text-emerald-400 leading-none">BUY</span>
         </div>
       </div>
 
-      {/* Rating sources */}
-      <div className="mx-4 mb-3">
-        <span className="text-[9px] font-bold text-white/40 uppercase tracking-widest">Ratings from</span>
-        <div className="flex gap-2 mt-1.5">
-          {[['GR', '#10B981'], ['AMZ', '#F97316'], ['BB', '#4F8EF7']].map(([label, color]) => (
-            <div key={label} className="flex items-center gap-1 px-2 py-1 rounded-lg bg-white/5 border border-white/8">
-              <div className="w-2 h-2 rounded-full" style={{ background: color }} />
-              <span className="text-[8px] text-white/60 font-medium">{label}</span>
-            </div>
-          ))}
+      {/* Profit breakdown — real data from inventory ($104.53 est. profit) */}
+      <div className="mx-4 mb-3 px-3 py-2.5 rounded-xl bg-white/4 border border-white/8">
+        <div className="flex justify-between mb-1.5">
+          <span className="text-[9px] text-white/40">Est. sell price</span>
+          <span className="text-[10px] font-bold text-white">$32.49</span>
+        </div>
+        <div className="flex justify-between mb-1.5">
+          <span className="text-[9px] text-white/40">Buy cost</span>
+          <span className="text-[10px] font-bold text-white">$5.00</span>
+        </div>
+        <div className="h-px bg-white/8 my-1.5" />
+        <div className="flex justify-between">
+          <span className="text-[9px] font-bold text-emerald-400">Net profit</span>
+          <span className="text-[10px] font-bold text-emerald-400">+$27.49</span>
         </div>
       </div>
 
       {/* Seller data rows */}
-      <div className="flex-1 flex flex-col gap-2 px-4 overflow-hidden">
+      <div className="flex flex-col gap-1.5 px-4 flex-1 overflow-hidden">
         {[
-          { label: 'FBA Sellers',  value: '14 active', color: '#F59E0B' },
-          { label: 'Buy Box',      value: 'FBA only',  color: '#10B981' },
-          { label: 'Restriction',  value: 'None',       color: '#10B981' },
+          { label: 'Sales Rank',   value: '#4,201',   color: '#4F8EF7' },
+          { label: 'FBA Sellers',  value: '8 active', color: '#F59E0B' },
+          { label: 'Restriction',  value: 'None',     color: '#10B981' },
         ].map((row) => (
-          <div key={row.label} className="flex items-center justify-between px-3 py-2.5 rounded-xl bg-white/5 border border-white/8">
+          <div key={row.label} className="flex items-center justify-between px-3 py-2 rounded-xl bg-white/5 border border-white/8">
             <span className="text-[9px] text-white/40 font-medium">{row.label}</span>
             <span className="text-[10px] font-bold" style={{ color: row.color }}>{row.value}</span>
           </div>
         ))}
       </div>
 
-      {/* CTA button */}
+      {/* Add to Buy List */}
       <div className="mx-4 mb-4 mt-3">
         <div className="w-full py-2.5 rounded-xl flex items-center justify-center"
           style={{ background: 'linear-gradient(135deg, #4F8EF7, #A855F7)' }}>
-          <span className="text-[10px] font-bold text-white">Add to Wishlist</span>
+          <span className="text-[10px] font-bold text-white">Add to Buy List</span>
         </div>
       </div>
 
