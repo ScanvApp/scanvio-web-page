@@ -219,7 +219,7 @@ function DashboardFrame({ active, setActive }: { active: number; setActive: (i: 
               exit={{ opacity: 0, scale: 0.98 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
               className="w-full h-full"
-              style={{ objectFit: 'cover', objectPosition: 'right top' }}
+              style={{ objectFit: 'cover', objectPosition: 'left top' }}
             />
           </AnimatePresence>
 
