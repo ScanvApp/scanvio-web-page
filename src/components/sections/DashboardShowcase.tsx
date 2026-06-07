@@ -25,100 +25,138 @@ function PhoneMockup() {
   const score = 84
 
   return (
-    <div
-      className="relative w-[200px] shrink-0 rounded-[2.6rem] overflow-hidden border-2 border-white/15 shadow-[0_30px_80px_rgba(0,0,0,0.8)]"
-      style={{ background: 'linear-gradient(160deg,#111827,#0a0f1a)', aspectRatio: '9/19.5' }}
+    /* Floating wrapper */
+    <motion.div
+      animate={{ y: [0, -10, 0] }}
+      transition={{ repeat: Infinity, duration: 3.6, ease: 'easeInOut' }}
+      style={{ perspective: 800 }}
+      whileHover={{ rotateY: 6, rotateX: -3, scale: 1.02 }}
     >
-      {/* Notch */}
-      <div className="absolute top-3 left-1/2 -translate-x-1/2 w-14 h-4 rounded-full bg-black z-10" />
+      {/* Outer glow that breathes */}
+      <motion.div
+        className="absolute -inset-3 rounded-[3rem] pointer-events-none"
+        animate={{ opacity: [0.4, 0.7, 0.4] }}
+        transition={{ repeat: Infinity, duration: 3.6, ease: 'easeInOut' }}
+        style={{ background: 'radial-gradient(ellipse at 50% 60%, rgba(16,185,129,0.25), transparent 70%)' }}
+      />
 
-      <div className="flex flex-col h-full px-4 pt-10 pb-5 gap-3">
+      <div
+        className="relative w-[200px] shrink-0 rounded-[2.6rem] overflow-hidden border-2 border-white/15 shadow-[0_30px_80px_rgba(0,0,0,0.8)]"
+        style={{ background: 'linear-gradient(160deg,#111827,#0a0f1a)', aspectRatio: '9/19.5' }}
+      >
+        {/* Screen shimmer sweep */}
+        <motion.div
+          className="absolute inset-0 pointer-events-none z-20"
+          style={{
+            background: 'linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.04) 50%, transparent 65%)',
+          }}
+          animate={{ x: ['-100%', '200%'] }}
+          transition={{ repeat: Infinity, duration: 3.5, ease: 'easeInOut', repeatDelay: 2 }}
+        />
 
-        {/* EScore */}
-        <div className="flex flex-col items-center gap-0.5 pt-2">
-          <span className="text-[7.5px] font-bold tracking-[0.22em] text-white/25 uppercase">ScanvEscore™</span>
-          <div className="relative w-[88px] h-[88px]">
-            <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
-              <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="8" />
-              <motion.circle
-                cx="50" cy="50" r={r} fill="none"
-                stroke="url(#scoreG)" strokeWidth="8" strokeLinecap="round"
-                strokeDasharray={circ}
-                initial={{ strokeDashoffset: circ }}
-                whileInView={{ strokeDashoffset: circ - circ * (score / 100) }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.3, delay: 0.5, ease: 'easeOut' }}
-              />
-              <defs>
-                <linearGradient id="scoreG" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#10B981" />
-                  <stop offset="100%" stopColor="#34D399" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <motion.span
-                className="text-[28px] font-extrabold text-white leading-none"
-                initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
-                viewport={{ once: true }} transition={{ delay: 0.9 }}
-              >
-                {score}
-              </motion.span>
-              <span className="text-[9px] text-white/30">/ 100</span>
+        {/* Notch */}
+        <div className="absolute top-3 left-1/2 -translate-x-1/2 w-14 h-4 rounded-full bg-black z-10" />
+
+        <div className="flex flex-col h-full px-4 pt-10 pb-5 gap-3">
+
+          {/* EScore */}
+          <div className="flex flex-col items-center gap-0.5 pt-2">
+            <span className="text-[7.5px] font-bold tracking-[0.22em] text-white/25 uppercase">ScanvEscore™</span>
+            <div className="relative w-[88px] h-[88px]">
+              <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
+                <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="8" />
+                <motion.circle
+                  cx="50" cy="50" r={r} fill="none"
+                  stroke="url(#scoreG)" strokeWidth="8" strokeLinecap="round"
+                  strokeDasharray={circ}
+                  initial={{ strokeDashoffset: circ }}
+                  whileInView={{ strokeDashoffset: circ - circ * (score / 100) }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.3, delay: 0.5, ease: 'easeOut' }}
+                />
+                <defs>
+                  <linearGradient id="scoreG" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#10B981" />
+                    <stop offset="100%" stopColor="#34D399" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <motion.span
+                  className="text-[28px] font-extrabold text-white leading-none"
+                  initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }} transition={{ delay: 0.9 }}
+                >
+                  {score}
+                </motion.span>
+                <span className="text-[9px] text-white/30">/ 100</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* BUY IT */}
-        <motion.div
-          className="flex flex-col items-center gap-1"
-          initial={{ opacity: 0, scale: 0.85 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 1, type: 'spring', stiffness: 200, damping: 16 }}
-        >
-          <div
-            className="w-full py-2.5 rounded-2xl flex items-center justify-center gap-2"
-            style={{
-              background: 'radial-gradient(circle at 40% 40%, #34D399, #059669)',
-              boxShadow: '0 0 28px rgba(16,185,129,0.4), 0 4px 16px rgba(0,0,0,0.4)',
-            }}
+          {/* BUY IT */}
+          <motion.div
+            className="flex flex-col items-center gap-1"
+            initial={{ opacity: 0, scale: 0.85 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1, type: 'spring', stiffness: 200, damping: 16 }}
           >
-            <div className="w-2 h-2 rounded-full bg-white/80" />
-            <span className="text-[13px] font-extrabold text-white tracking-wider">BUY IT</span>
+            <div className="relative w-full">
+              {/* Ping rings */}
+              {[0, 0.6].map((delay) => (
+                <motion.div
+                  key={delay}
+                  className="absolute inset-0 rounded-2xl pointer-events-none"
+                  animate={{ scale: [1, 1.22], opacity: [0.35, 0] }}
+                  transition={{ repeat: Infinity, duration: 1.8, ease: 'easeOut', delay }}
+                  style={{ background: 'rgba(16,185,129,0.35)' }}
+                />
+              ))}
+              <div
+                className="relative w-full py-2.5 rounded-2xl flex items-center justify-center gap-2"
+                style={{
+                  background: 'radial-gradient(circle at 40% 40%, #34D399, #059669)',
+                  boxShadow: '0 0 28px rgba(16,185,129,0.4), 0 4px 16px rgba(0,0,0,0.4)',
+                }}
+              >
+                <div className="w-2 h-2 rounded-full bg-white/80" />
+                <span className="text-[13px] font-extrabold text-white tracking-wider">BUY IT</span>
+              </div>
+            </div>
+            <span className="text-[8px] text-emerald-400/60 text-center leading-tight">
+              GoSignal · above your 60 threshold
+            </span>
+          </motion.div>
+
+          {/* Divider */}
+          <div className="h-px bg-white/6 mx-1" />
+
+          {/* Prices */}
+          <div className="flex flex-col gap-1.5">
+            {PRICES.map((p, i) => (
+              <motion.div
+                key={p.store}
+                className="flex items-center justify-between px-2.5 py-2 rounded-xl"
+                style={{
+                  background: p.highlight ? 'rgba(16,185,129,0.08)' : 'rgba(255,255,255,0.03)',
+                  border: `1px solid ${p.highlight ? 'rgba(16,185,129,0.2)' : 'rgba(255,255,255,0.06)'}`,
+                }}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 1.05 + i * 0.08 }}
+              >
+                <span className="text-[10px] text-white/45 font-medium">{p.store}</span>
+                <span className={`text-[11px] font-bold ${p.highlight ? 'text-emerald-400' : 'text-white/65'}`}>
+                  {p.price}
+                </span>
+              </motion.div>
+            ))}
           </div>
-          <span className="text-[8px] text-emerald-400/60 text-center leading-tight">
-            GoSignal · above your 60 threshold
-          </span>
-        </motion.div>
-
-        {/* Divider */}
-        <div className="h-px bg-white/6 mx-1" />
-
-        {/* Prices */}
-        <div className="flex flex-col gap-1.5">
-          {PRICES.map((p, i) => (
-            <motion.div
-              key={p.store}
-              className="flex items-center justify-between px-2.5 py-2 rounded-xl"
-              style={{
-                background: p.highlight ? 'rgba(16,185,129,0.08)' : 'rgba(255,255,255,0.03)',
-                border: `1px solid ${p.highlight ? 'rgba(16,185,129,0.2)' : 'rgba(255,255,255,0.06)'}`,
-              }}
-              initial={{ opacity: 0, x: -10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 1.05 + i * 0.08 }}
-            >
-              <span className="text-[10px] text-white/45 font-medium">{p.store}</span>
-              <span className={`text-[11px] font-bold ${p.highlight ? 'text-emerald-400' : 'text-white/65'}`}>
-                {p.price}
-              </span>
-            </motion.div>
-          ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
